@@ -1,0 +1,497 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		DED9E111C3765070E9D8A7B2 /* Pods_soomgo_interview_mobile.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 82FB06B7726B06495BCD400C /* Pods_soomgo_interview_mobile.framework */; };
+		E91E939022E1E4F1009EF3FB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E91E938F22E1E4F1009EF3FB /* AppDelegate.swift */; };
+		E91E939222E1E4F1009EF3FB /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E91E939122E1E4F1009EF3FB /* SearchViewController.swift */; };
+		E91E939422E1E4F1009EF3FB /* BookmarksViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E91E939322E1E4F1009EF3FB /* BookmarksViewController.swift */; };
+		E91E939722E1E4F1009EF3FB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E91E939522E1E4F1009EF3FB /* Main.storyboard */; };
+		E91E939922E1E4F2009EF3FB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E91E939822E1E4F2009EF3FB /* Assets.xcassets */; };
+		E91E939C22E1E4F2009EF3FB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E91E939A22E1E4F2009EF3FB /* LaunchScreen.storyboard */; };
+		E9E676CC22E2EC1700DB9271 /* SearchReducer.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9E676CB22E2EC1700DB9271 /* SearchReducer.swift */; };
+		E9E676CE22E2EC2A00DB9271 /* BookmarkReducer.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9E676CD22E2EC2A00DB9271 /* BookmarkReducer.swift */; };
+		E9E676D222E2ED2600DB9271 /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9E676D122E2ED2600DB9271 /* API.swift */; };
+		E9E676D622E2F04C00DB9271 /* Article.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9E676D522E2F04C00DB9271 /* Article.swift */; };
+		E9E676D822E2F86700DB9271 /* MainState.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9E676D722E2F86700DB9271 /* MainState.swift */; };
+		E9E676DA22E2F90500DB9271 /* Actions.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9E676D922E2F90500DB9271 /* Actions.swift */; };
+		E9E676DF22E30FAC00DB9271 /* BookmarksRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9E676DE22E30FAC00DB9271 /* BookmarksRepository.swift */; };
+		E9E676E122E320E600DB9271 /* ActionReducer.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9E676E022E320E600DB9271 /* ActionReducer.swift */; };
+		E9E676E522E35A4200DB9271 /* Bookmark.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9E676E422E35A4200DB9271 /* Bookmark.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		5290963F854C941B16036188 /* Pods-soomgo-interview-mobile.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-soomgo-interview-mobile.debug.xcconfig"; path = "Target Support Files/Pods-soomgo-interview-mobile/Pods-soomgo-interview-mobile.debug.xcconfig"; sourceTree = "<group>"; };
+		64F7BA21102F221D5A763DC6 /* Pods-soomgo-interview-mobile.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-soomgo-interview-mobile.release.xcconfig"; path = "Target Support Files/Pods-soomgo-interview-mobile/Pods-soomgo-interview-mobile.release.xcconfig"; sourceTree = "<group>"; };
+		82FB06B7726B06495BCD400C /* Pods_soomgo_interview_mobile.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_soomgo_interview_mobile.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E91E938C22E1E4F1009EF3FB /* soomgo-interview-mobile.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "soomgo-interview-mobile.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		E91E938F22E1E4F1009EF3FB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		E91E939122E1E4F1009EF3FB /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
+		E91E939322E1E4F1009EF3FB /* BookmarksViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookmarksViewController.swift; sourceTree = "<group>"; };
+		E91E939622E1E4F1009EF3FB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		E91E939822E1E4F2009EF3FB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		E91E939B22E1E4F2009EF3FB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		E91E939D22E1E4F2009EF3FB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E9E676CB22E2EC1700DB9271 /* SearchReducer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchReducer.swift; sourceTree = "<group>"; };
+		E9E676CD22E2EC2A00DB9271 /* BookmarkReducer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookmarkReducer.swift; sourceTree = "<group>"; };
+		E9E676D122E2ED2600DB9271 /* API.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = API.swift; sourceTree = "<group>"; };
+		E9E676D522E2F04C00DB9271 /* Article.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Article.swift; sourceTree = "<group>"; };
+		E9E676D722E2F86700DB9271 /* MainState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainState.swift; sourceTree = "<group>"; };
+		E9E676D922E2F90500DB9271 /* Actions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Actions.swift; sourceTree = "<group>"; };
+		E9E676DE22E30FAC00DB9271 /* BookmarksRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookmarksRepository.swift; sourceTree = "<group>"; };
+		E9E676E022E320E600DB9271 /* ActionReducer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActionReducer.swift; sourceTree = "<group>"; };
+		E9E676E422E35A4200DB9271 /* Bookmark.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bookmark.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		E91E938922E1E4F1009EF3FB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DED9E111C3765070E9D8A7B2 /* Pods_soomgo_interview_mobile.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		633D554136780B49CA37D315 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				5290963F854C941B16036188 /* Pods-soomgo-interview-mobile.debug.xcconfig */,
+				64F7BA21102F221D5A763DC6 /* Pods-soomgo-interview-mobile.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		AAEF3117175C4EF9E2FF23C4 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				82FB06B7726B06495BCD400C /* Pods_soomgo_interview_mobile.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E91E938322E1E4F1009EF3FB = {
+			isa = PBXGroup;
+			children = (
+				E91E938E22E1E4F1009EF3FB /* soomgo-interview-mobile */,
+				E91E938D22E1E4F1009EF3FB /* Products */,
+				633D554136780B49CA37D315 /* Pods */,
+				AAEF3117175C4EF9E2FF23C4 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		E91E938D22E1E4F1009EF3FB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E91E938C22E1E4F1009EF3FB /* soomgo-interview-mobile.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		E91E938E22E1E4F1009EF3FB /* soomgo-interview-mobile */ = {
+			isa = PBXGroup;
+			children = (
+				E9E676D322E2ED3100DB9271 /* API */,
+				E9E676DB22E30D6900DB9271 /* Database */,
+				E9E676D422E2F04300DB9271 /* Model */,
+				E9E676D022E2ECF400DB9271 /* State */,
+				E9E676CF22E2ECE100DB9271 /* Action */,
+				E9E676CA22E2EB7C00DB9271 /* Reducer */,
+				E91E938F22E1E4F1009EF3FB /* AppDelegate.swift */,
+				E91E939122E1E4F1009EF3FB /* SearchViewController.swift */,
+				E91E939322E1E4F1009EF3FB /* BookmarksViewController.swift */,
+				E91E939522E1E4F1009EF3FB /* Main.storyboard */,
+				E91E939822E1E4F2009EF3FB /* Assets.xcassets */,
+				E91E939A22E1E4F2009EF3FB /* LaunchScreen.storyboard */,
+				E91E939D22E1E4F2009EF3FB /* Info.plist */,
+			);
+			path = "soomgo-interview-mobile";
+			sourceTree = "<group>";
+		};
+		E9E676CA22E2EB7C00DB9271 /* Reducer */ = {
+			isa = PBXGroup;
+			children = (
+				E9E676CB22E2EC1700DB9271 /* SearchReducer.swift */,
+				E9E676CD22E2EC2A00DB9271 /* BookmarkReducer.swift */,
+				E9E676E022E320E600DB9271 /* ActionReducer.swift */,
+			);
+			path = Reducer;
+			sourceTree = "<group>";
+		};
+		E9E676CF22E2ECE100DB9271 /* Action */ = {
+			isa = PBXGroup;
+			children = (
+				E9E676D922E2F90500DB9271 /* Actions.swift */,
+			);
+			path = Action;
+			sourceTree = "<group>";
+		};
+		E9E676D022E2ECF400DB9271 /* State */ = {
+			isa = PBXGroup;
+			children = (
+				E9E676D722E2F86700DB9271 /* MainState.swift */,
+			);
+			path = State;
+			sourceTree = "<group>";
+		};
+		E9E676D322E2ED3100DB9271 /* API */ = {
+			isa = PBXGroup;
+			children = (
+				E9E676D122E2ED2600DB9271 /* API.swift */,
+			);
+			path = API;
+			sourceTree = "<group>";
+		};
+		E9E676D422E2F04300DB9271 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				E9E676D522E2F04C00DB9271 /* Article.swift */,
+				E9E676E422E35A4200DB9271 /* Bookmark.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		E9E676DB22E30D6900DB9271 /* Database */ = {
+			isa = PBXGroup;
+			children = (
+				E9E676DE22E30FAC00DB9271 /* BookmarksRepository.swift */,
+			);
+			path = Database;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		E91E938B22E1E4F1009EF3FB /* soomgo-interview-mobile */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E91E93A022E1E4F2009EF3FB /* Build configuration list for PBXNativeTarget "soomgo-interview-mobile" */;
+			buildPhases = (
+				B9A1158B15FB359E14F8B4D7 /* [CP] Check Pods Manifest.lock */,
+				E91E938822E1E4F1009EF3FB /* Sources */,
+				E91E938922E1E4F1009EF3FB /* Frameworks */,
+				E91E938A22E1E4F1009EF3FB /* Resources */,
+				F07641A0B25197587C2B4008 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "soomgo-interview-mobile";
+			productName = "soomgo-interview-mobile";
+			productReference = E91E938C22E1E4F1009EF3FB /* soomgo-interview-mobile.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		E91E938422E1E4F1009EF3FB /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1020;
+				LastUpgradeCheck = 1020;
+				ORGANIZATIONNAME = "Thomas Jeong";
+				TargetAttributes = {
+					E91E938B22E1E4F1009EF3FB = {
+						CreatedOnToolsVersion = 10.2.1;
+					};
+				};
+			};
+			buildConfigurationList = E91E938722E1E4F1009EF3FB /* Build configuration list for PBXProject "soomgo-interview-mobile" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = E91E938322E1E4F1009EF3FB;
+			productRefGroup = E91E938D22E1E4F1009EF3FB /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				E91E938B22E1E4F1009EF3FB /* soomgo-interview-mobile */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		E91E938A22E1E4F1009EF3FB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E91E939C22E1E4F2009EF3FB /* LaunchScreen.storyboard in Resources */,
+				E91E939922E1E4F2009EF3FB /* Assets.xcassets in Resources */,
+				E91E939722E1E4F1009EF3FB /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		B9A1158B15FB359E14F8B4D7 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-soomgo-interview-mobile-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F07641A0B25197587C2B4008 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-soomgo-interview-mobile/Pods-soomgo-interview-mobile-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-soomgo-interview-mobile/Pods-soomgo-interview-mobile-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-soomgo-interview-mobile/Pods-soomgo-interview-mobile-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		E91E938822E1E4F1009EF3FB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E9E676D622E2F04C00DB9271 /* Article.swift in Sources */,
+				E91E939422E1E4F1009EF3FB /* BookmarksViewController.swift in Sources */,
+				E9E676CE22E2EC2A00DB9271 /* BookmarkReducer.swift in Sources */,
+				E9E676D822E2F86700DB9271 /* MainState.swift in Sources */,
+				E91E939022E1E4F1009EF3FB /* AppDelegate.swift in Sources */,
+				E9E676DF22E30FAC00DB9271 /* BookmarksRepository.swift in Sources */,
+				E9E676E122E320E600DB9271 /* ActionReducer.swift in Sources */,
+				E9E676CC22E2EC1700DB9271 /* SearchReducer.swift in Sources */,
+				E9E676DA22E2F90500DB9271 /* Actions.swift in Sources */,
+				E9E676D222E2ED2600DB9271 /* API.swift in Sources */,
+				E91E939222E1E4F1009EF3FB /* SearchViewController.swift in Sources */,
+				E9E676E522E35A4200DB9271 /* Bookmark.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		E91E939522E1E4F1009EF3FB /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E91E939622E1E4F1009EF3FB /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		E91E939A22E1E4F2009EF3FB /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E91E939B22E1E4F2009EF3FB /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		E91E939E22E1E4F2009EF3FB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		E91E939F22E1E4F2009EF3FB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		E91E93A122E1E4F2009EF3FB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5290963F854C941B16036188 /* Pods-soomgo-interview-mobile.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "soomgo-interview-mobile/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.test.soomgo-interview-mobile";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		E91E93A222E1E4F2009EF3FB /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 64F7BA21102F221D5A763DC6 /* Pods-soomgo-interview-mobile.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "soomgo-interview-mobile/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.test.soomgo-interview-mobile";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		E91E938722E1E4F1009EF3FB /* Build configuration list for PBXProject "soomgo-interview-mobile" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E91E939E22E1E4F2009EF3FB /* Debug */,
+				E91E939F22E1E4F2009EF3FB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E91E93A022E1E4F2009EF3FB /* Build configuration list for PBXNativeTarget "soomgo-interview-mobile" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E91E93A122E1E4F2009EF3FB /* Debug */,
+				E91E93A222E1E4F2009EF3FB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = E91E938422E1E4F1009EF3FB /* Project object */;
+}
