@@ -19,11 +19,7 @@ struct Bookmark: FFObject {
     var createdAt: Date?
     
     func formattedPubDate() -> String {
-        let dateFormatter = DateFormatter()
-        dateFormatter.dateFormat = "yyyy.MM.dd HH:mm"
-        dateFormatter.locale = Locale.current
-        
-        return dateFormatter.string(from: pubDate!)
+        return pubDate!.formattedString()
     }
     
     static func memoryPropertys() -> [String]? {

@@ -19,19 +19,8 @@ struct Article: Decodable {
         return BookmarksRepository.shared.firstIndex(self) != nil
     }
     
-    func date() -> Date {
-        let dateFormatter = DateFormatter()
-        dateFormatter.dateFormat = "yyyy-MM-dd'T'HH:mm:ssZ"
-        dateFormatter.locale = Locale.current
-        return dateFormatter.date(from: pubDate)!
-    }
-    
     func formattedPubDate() -> String {
-        let dateFormatter = DateFormatter()
-        dateFormatter.dateFormat = "yyyy.MM.dd HH:mm"
-        dateFormatter.locale = Locale.current
-        
-        return dateFormatter.string(from: date())
+        return pubDate.toDate().formattedString()
     }
     
     private enum CodingKeys: String, CodingKey {

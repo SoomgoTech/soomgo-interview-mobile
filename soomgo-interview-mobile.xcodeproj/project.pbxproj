@@ -14,6 +14,7 @@
 		E91E939722E1E4F1009EF3FB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E91E939522E1E4F1009EF3FB /* Main.storyboard */; };
 		E91E939922E1E4F2009EF3FB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E91E939822E1E4F2009EF3FB /* Assets.xcassets */; };
 		E91E939C22E1E4F2009EF3FB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E91E939A22E1E4F2009EF3FB /* LaunchScreen.storyboard */; };
+		E99515FE22E3FB21001558E3 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = E99515FD22E3FB21001558E3 /* Extensions.swift */; };
 		E9E676CC22E2EC1700DB9271 /* SearchReducer.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9E676CB22E2EC1700DB9271 /* SearchReducer.swift */; };
 		E9E676CE22E2EC2A00DB9271 /* BookmarkReducer.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9E676CD22E2EC2A00DB9271 /* BookmarkReducer.swift */; };
 		E9E676D222E2ED2600DB9271 /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9E676D122E2ED2600DB9271 /* API.swift */; };
@@ -37,6 +38,7 @@
 		E91E939822E1E4F2009EF3FB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E91E939B22E1E4F2009EF3FB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E91E939D22E1E4F2009EF3FB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E99515FD22E3FB21001558E3 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		E9E676CB22E2EC1700DB9271 /* SearchReducer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchReducer.swift; sourceTree = "<group>"; };
 		E9E676CD22E2EC2A00DB9271 /* BookmarkReducer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookmarkReducer.swift; sourceTree = "<group>"; };
 		E9E676D122E2ED2600DB9271 /* API.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = API.swift; sourceTree = "<group>"; };
@@ -98,6 +100,7 @@
 		E91E938E22E1E4F1009EF3FB /* soomgo-interview-mobile */ = {
 			isa = PBXGroup;
 			children = (
+				E99515FC22E3FB0C001558E3 /* Extension */,
 				E9E676D322E2ED3100DB9271 /* API */,
 				E9E676DB22E30D6900DB9271 /* Database */,
 				E9E676D422E2F04300DB9271 /* Model */,
@@ -113,6 +116,14 @@
 				E91E939D22E1E4F2009EF3FB /* Info.plist */,
 			);
 			path = "soomgo-interview-mobile";
+			sourceTree = "<group>";
+		};
+		E99515FC22E3FB0C001558E3 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				E99515FD22E3FB21001558E3 /* Extensions.swift */,
+			);
+			path = Extension;
 			sourceTree = "<group>";
 		};
 		E9E676CA22E2EB7C00DB9271 /* Reducer */ = {
@@ -289,6 +300,7 @@
 				E9E676DF22E30FAC00DB9271 /* BookmarksRepository.swift in Sources */,
 				E9E676E122E320E600DB9271 /* ActionReducer.swift in Sources */,
 				E9E676CC22E2EC1700DB9271 /* SearchReducer.swift in Sources */,
+				E99515FE22E3FB21001558E3 /* Extensions.swift in Sources */,
 				E9E676DA22E2F90500DB9271 /* Actions.swift in Sources */,
 				E9E676D222E2ED2600DB9271 /* API.swift in Sources */,
 				E91E939222E1E4F1009EF3FB /* SearchViewController.swift in Sources */,

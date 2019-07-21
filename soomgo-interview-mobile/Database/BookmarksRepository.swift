@@ -47,7 +47,7 @@ class BookmarksRepository {
         var bookmark = Bookmark()
         bookmark.articleId = article.id
         bookmark.headline = article.headline.main
-        bookmark.pubDate = article.date()
+        bookmark.pubDate = article.pubDate.toDate()
         bookmark.snippet = article.snippet
         bookmark.webUrl = article.webUrl
         bookmark.createdAt = Date()
